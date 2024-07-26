@@ -22,7 +22,7 @@ const PlantDiseasePredictor = () => {
         const loadModel = async () => {
             try {
                 console.log('Loading model...');
-                const model = await tf.loadLayersModel('http://localhost:3000/ModelAI/tfjs_model/model.json');
+                const model = await tf.loadLayersModel('https://18-anth.github.io/ModelAI/tfjs_model/model.json');
                 setModel(model);
                 console.log('Model loaded successfully');
             } catch (error) {
